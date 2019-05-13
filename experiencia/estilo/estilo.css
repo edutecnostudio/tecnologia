@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    font-family: Century Gothic;
+    text-align: justify;
+}
+ 
+body {
+	background:url(../imagenes/fondo1.jpg);
+	background-repeat:no-repeat; 
+	background-size:cover;
+	background-attachment: fixed; 
+ 
+	font-family:helvetica, arial, sans-serif;
+	line-height:20px;
+}
+ 
+.contenedor {
+	width: 90%;
+	max-width:900px;
+	margin:auto;
+}
+ 
+article {
+	background:rgba(24,8,33,.9);
+	padding:20px;
+	margin:20px 0;
+	color:#fff;
+	box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
+}
+ 
+article h1 {
+	color:#fff;
+}
+ 
+article hr {
+	background:#B2EBF2;
+	height:5px;
+	border:none;
+    margin-top: 30px;
+}
+ 
+article p {
+	line-height: 25px;
+}
+ 
+article h2, article p, article hr {
+	margin-bottom: 20px;
+}
+h1{
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+   
+}

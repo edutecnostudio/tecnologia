@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    background:black;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.content-all{ 
+    width: 800px;
+    height: 500px;
+    position: relative;
+    display: flex; 
+    margin: auto;
+    margin-top: 5%;
+    overflow: hidden; 
+    perspective: 100px; 
+    
+    box-shadow: 0 20px 40px 0 #B2EBF2; 
+}
+
+.content-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px; 
+    left: 0px;
+    transform: translateX(-100%) rotateY(360deg); 
+    opacity: 0;
+    transition: all 1s; 
+}
+
+#img1{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.content-img:target{ 
+    transform: translateX(0) rotateY(0deg);
+    opacity: 1;
+}
+.content-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.icon-left-open{ 
+    position: absolute;
+    top: 250px;
+    left: 0;
+    font-size: 40px;
+    text-decoration: none;
+    color:#B999DF;
+}
+
+.icon-right-open{ 
+    position: absolute;
+    top: 250px;
+    right: 0;
+    font-size: 40px;
+    text-decoration: none;
+    color: #B999DF;
+}
+
+.content-details{ 
+    position: relative;
+    top: -350px;
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;
+    font-family: arial;
+}
+
+.content-details p{
+    margin-top: 10px;
+}
+
+.content-details input[type="button"]{ 
+    padding: 6px 40px;
+    font-size: 18px;
+    margin-top: 10px;
+    background: rgba(109, 212, 250, 0.5);
+    border-style: none;
+    color: yellow;
+    outline: 0px;
+    transition: all 300ms;
+}
+
+.content-details input[type="button"]:hover{ 
+    background: rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: all 300ms;
+    font-family: 'Pacifico', cursive;
+}
+.button{
+    display: block;
+    padding: 15px 20px;
+    margin-top: .8em;
+    background: #9DE4F4;
+    text-align: center;
+    color: #446167;
+    font-size: 1.4em;
+    border-radius: 3px;
+    transition: all .4s ease-in;
+height: 45px;
+}
